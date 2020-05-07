@@ -1,0 +1,133 @@
+@media screen and (max-width: 1200px) {
+  .header {
+    &__bg__wrapper {
+      top: -115px;
+    }
+  }
+  .product {
+    &__inner {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__descr {
+      padding-top: 0;
+    }
+    &__descr {
+      margin-bottom: 70px;
+    }
+  }
+  .pricing {
+    &__img__wrapper {
+      display: none;
+    }
+    &__item {
+      max-width: 100%;
+      text-align: center;
+      margin: 0 auto;
+    }
+    &__category {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+   .header__wrapper__link {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    &__bg__wrapper {
+      top: -20px;
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .header {
+    &__bg__wrapper {
+      display: none;
+    }
+    &__descr {
+      max-width: 100%;
+    }
+  }
+  .nav {
+    &__menu {
+      display: none;
+    }
+  }
+  .pricing {
+    &__category {
+      &__item {
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .hamburger-icon {
+    display: block;
+  }
+  .product {
+    &__about {
+      text-align: center;
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    &__descr {
+      padding-top: 90px;
+      .nav__link--signIn {
+        font-size: 16px;
+      }
+    }
+    &__title {
+      font-size: 40px;
+    }
+    &__text {
+      font-size: 19px;
+    }
+    &__questions {
+      font-size: 16px;
+    }
+    &__mod--arrow {
+      display: none;
+    }
+  }
+
+  .product {
+    &__descr {
+      margin-bottom: 110px;
+    }
+  }
+  .customers {
+    &__descr {
+      .customers__title {
+        font-size: 38px;
+      }
+      .customers__text {
+        font-size: 18px;
+      }
+    }
+  }
+  .pricing {
+    &__title {
+      font-size: 35px;
+    }
+    &__text {
+      font-size: 20px;
+    }
+    .nav__link--signIn {
+      margin-bottom: 10px;
+    }
+    .header__questions {
+      margin-right: 30px;
+    }
+  }
+}
+

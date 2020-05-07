@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Brown';
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@import './layout/header';
+@import './layout/nav';
+@import './layout/product';
+@import './uiElements/hamburder__menu';
+@import './uiElements/preloader';
+@import './layout/customers';
+@import './layout/pricing';
+@import './media/media';

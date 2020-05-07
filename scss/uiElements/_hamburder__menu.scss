@@ -1,0 +1,59 @@
+$height-icon: 30px;
+$width-line: 50px;
+$height-line: 8px;
+$color: #645293;
+
+$transition-time: 0.4s;
+$rotation: 45deg;
+$translateY: ($height-icon / 2);
+$translateX: 0;
+
+.hamburger-icon {
+  display: none;
+  width:$width-line;
+  height:$height-icon;
+  position:relative;
+
+  .line {
+    display:block;
+    background:$color;
+    width:$width-line - 10;
+    height:$height-line - 3;
+    position:absolute;
+    left:0;
+    border-radius:($height-line / 2);
+    transition: all $transition-time;
+    -webkit-transition: all $transition-time;
+    -moz-transition: all $transition-time;
+
+    &.line-1 {
+      top:0;
+    }
+    &.line-2 {
+      top:50%;
+    }
+    &.line-3 {
+      top:100%;
+    }
+  }
+  &:hover, &:focus {
+     .line-1 {
+      transform: translateY($height-line / 2 * -1);
+     }
+    .line-3 {
+      transform: translateY($height-line / 2);
+    }
+  }
+  &.active {
+    .line-1 {
+      transform: translateY($translateY) translateX($translateX) rotate($rotation);
+    }
+    .line-2 {
+      opacity:0;
+    }
+    .line-3 {
+      transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+    }
+  }
+}
+
