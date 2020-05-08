@@ -12,7 +12,9 @@ $translateX: 0;
   display: none;
   width:$width-line;
   height:$height-icon;
-  position:relative;
+  position: relative;
+  z-index: 100;
+  cursor: pointer;
 
   .line {
     display:block;
