@@ -31,7 +31,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   menuMobileItem.forEach(element => {
     element.addEventListener('click', () => {
-      menuMobile.classList.remove('menu--active')
+      menuMobile.classList.remove('menu--active');
+      hamburger.classList.remove('active');
     })
   });
 
