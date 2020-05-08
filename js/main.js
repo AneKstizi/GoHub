@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
   TweenMax.from('.header__descr', 1.5, {
       delay: 1.1,
       opacity: 0,
-      x: 100,
+      y: 100,
       ease: Expo.easeInOut
     }
   )
