@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     menuMobile.classList.toggle('menu--active')
 
     if (menuMobile.classList.contains('menu--active')) {
-      document.body.style.overflow = 'hidden'
+      document.body.style.overflow = 'hidden';
       TweenMax.staggerFrom('.nav__item--mobile', 1, {
           opacity: 0,
           y: 20,
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       )
     } else {
-      document.body.style.overflow = 'auto'
+      document.body.style.overflow = 'auto';
     }
 
   })
@@ -33,13 +33,14 @@ document.addEventListener("DOMContentLoaded", function() {
     element.addEventListener('click', () => {
       menuMobile.classList.remove('menu--active');
       hamburger.classList.remove('active');
+      document.body.style.overflow = 'auto';
     })
   });
 
   setTimeout(() => {
     overlay.style.opacity = 0;
     overlay.style.visibility = 'hidden';
-    document.body.style.overflow = 'auto'
+    document.body.style.overflow = 'auto';
   }, 1000)
 
 
