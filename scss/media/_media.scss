@@ -14,10 +14,6 @@
     &__bg__wrapper {
       top: -115px;
     }
-    &__wrapper__link {
-      justify-content: center;
-      flex-wrap: wrap;
-    }
   }
   .product {
     &__inner {
@@ -43,7 +39,10 @@
       justify-content: center;
       flex-wrap: wrap;
     }
-
+    .header__wrapper__link {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
   .docs {
     &__bg {
@@ -102,7 +101,7 @@
   .product {
     &__about {
       text-align: center;
-      padding: 0;
+      padding: 30px 0 0 0;
     }
   }
 }
@@ -110,7 +109,7 @@
 @media screen and (max-width: 500px) {
   .header {
     &__descr {
-      padding-top: 90px;
+      padding-top: 50px;
       .nav__link--signIn {
         font-size: 16px;
       }
@@ -133,15 +132,21 @@
     &__descr {
       margin-bottom: 110px;
     }
+    &__title {
+      font-size: 42px;
+    }
+    &__text {
+      font-size: 20px;
+    }
   }
   .customers {
 
     &__title {
-      font-size: 38px;
+      font-size: 35px;
 
     }
     &__text {
-      font-size: 18px;
+      font-size: 16px;
     }
   }
   .pricing {
