@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
+
   const hamburger = document.querySelector('.hamburger-icon');
   const overlay = document.querySelector('.overlay');
   const menuMobile = document.querySelector('.nav__menu--mobile');
   const menuMobileItem = document.querySelectorAll('.nav__item--mobile')
-  console.log('menuMobileItem: ', menuMobileItem);
 
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');

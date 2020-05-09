@@ -1,6 +1,11 @@
 @media screen and (min-width: 1650px) {
   .header {
     min-height: 850px;
+    &__bg {
+      &__wrapper {
+        right: 5%;
+      }
+    }
   }
 }
 
@@ -8,6 +13,10 @@
   .header {
     &__bg__wrapper {
       top: -115px;
+    }
+    &__wrapper__link {
+      justify-content: center;
+      flex-wrap: wrap;
     }
   }
   .product {
@@ -17,10 +26,8 @@
       align-items: center;
     }
     &__descr {
-      padding-top: 0;
-    }
-    &__descr {
       margin-bottom: 70px;
+      padding-top: 0;
     }
   }
   .pricing {
@@ -37,9 +44,25 @@
       flex-wrap: wrap;
     }
 
-   .header__wrapper__link {
-      justify-content: center;
-      flex-wrap: wrap;
+  }
+  .docs {
+    &__bg {
+      &__wrapper {
+        display: none;
+      }
+    }
+    &__descr {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+    &__item {
+      max-width: 450px;
+      margin: 0 auto 50px;
+      &__wrapper {
+        display: block;
+        margin-top: 0;
+      }
     }
   }
 }
@@ -112,13 +135,13 @@
     }
   }
   .customers {
-    &__descr {
-      .customers__title {
-        font-size: 38px;
-      }
-      .customers__text {
-        font-size: 18px;
-      }
+
+    &__title {
+      font-size: 38px;
+
+    }
+    &__text {
+      font-size: 18px;
     }
   }
   .pricing {
@@ -133,6 +156,27 @@
     }
     .header__questions {
       margin-right: 30px;
+    }
+  }
+  .docs {
+    padding: 100px 0;
+    &__descr {
+      &__title {
+        font-size: 37px;
+      }
+      &__text {
+        font-size: 16px;
+      }
+    }
+    &__item {
+      &__title {
+        font-size: 25px;
+      }
+      &__list {
+        &__item {
+          font-size: 16px;
+        }
+      }
     }
   }
 }
